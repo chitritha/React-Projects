@@ -1,0 +1,70 @@
+.App {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  background-color: #f3f4f6;
+  min-height: 100vh;
+}
+
+.AppTitle {
+  font-size: 2rem;
+  color: #2d3748;
+  margin-bottom: 20px;
+}
+
+.SearchBox {
+  margin-bottom: 25px;
+}
+
+.SearchBox input {
+  padding: 10px 15px;
+  width: 280px;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.SearchBox input:focus {
+  border-color: #3182ce;
+  box-shadow: 0 0 5px rgba(49, 130, 206, 0.4);
+}
+
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.user-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 240px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.user-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.user-card h3 {
+  color: #2b6cb0;
+  margin-bottom: 10px;
+}
+
+.user-card p {
+  color: #4a5568;
+  font-size: 15px;
+  margin: 5px 0;
+}
+
+p {
+  color: #718096;
+  font-size: 16px;
+}
