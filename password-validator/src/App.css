@@ -1,0 +1,106 @@
+.App {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 30px;
+  background-color: #f2f2f2;
+  min-height: 100vh;
+}
+
+.AppTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.PasswordBox {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.PasswordBox input {
+  padding: 10px 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  width: 250px;
+  transition: border 0.3s ease;
+}
+
+.PasswordBox input:focus {
+  border-color: #4caf50;
+}
+
+.PasswordBox button {
+  padding: 10px 18px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.PasswordBox button:disabled,
+.PasswordBox button.disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.PasswordBox button.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.RulesList {
+  max-width: 450px;
+  margin: 30px auto 0 auto;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.RulesList h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.ValidationList p,
+.ValidationList div {
+  font-size: 0.95rem;
+  margin: 6px 0;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.valid {
+  color: #0c9e43;
+  font-weight: 500;
+}
+
+
+
+.valid::before,
+.invalid::before {
+  display: inline-block;
+  width: 24px;
+  text-align: center;
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+.SubRules {
+  margin-left: 25px;
+  font-size: 0.9rem;
+}
+
+.ValidationList p:hover {
+  transform: translateX(4px);
+}
