@@ -1,0 +1,123 @@
+/* Reset & base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root, .App {
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  background-color: #FFFFFF;
+  color: #333333;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Header / Title */
+.App h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Step counter styling */
+.step-counter {
+  font-size: 0.9rem;
+  color: #666666;
+  margin-bottom: 1.5rem;
+}
+
+/* Each step container */
+.step {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fafafa;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Form elements */
+.step h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #222222;
+}
+
+.step input[type="text"],
+.step input[type="email"],
+.step input[type="date"],
+.step input[type="number"],
+.step select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.step input:focus,
+.step select:focus {
+  outline: none;
+  border-color: #FF0083; /* “Lemonade pink” accent */
+}
+
+/* Radio labels in Step1Account */
+.step label {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  cursor: pointer;
+}
+
+.step label input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+/* Button styles */
+.form-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.form-navigation button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+.form-navigation button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.form-navigation button:first-child {
+  background-color: #e0e0e0;
+  color: #333333;
+}
+
+.form-navigation button:nth-child(2) {
+  background-color: #FF0083;
+  color: white;
+}
+
+.form-navigation button:hover:not(:disabled) {
+  filter: brightness(0.9);
+}
+
+
